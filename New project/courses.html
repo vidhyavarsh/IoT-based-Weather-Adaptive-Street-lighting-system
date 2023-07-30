@@ -1,0 +1,83 @@
+<!-- 
+</body></html-->
+<!DOCTYPE html>
+<html lang="en"><title>Media Gallery </title>
+ <head> <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxXYQaylK4q5H2mCvoIc_lMK_qq216bf3_QwpQcZFtOQ&s" hieght=1% widht="1%">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+.header {
+  text-align: center;
+  padding: 32px;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  -ms-flex: 25%; 
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+@media screen and (max-width:765px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style></head>
+<body>
+
+<div class="header">
+  <h1>Our Company's Media Gallery</h1>
+  <p style="font-size: 30px;">Learn Big Achive Big </p>
+</div>
+
+<div class="row"> 
+  <div class="column">
+    <img src="20.jpg" style="width:100%">
+    <img src="21.jpg" style="width:100%">
+    <img src="22.jpg" style="width:100%"> 
+  </div>
+  <div class="column">
+    <img src="24.png" style="width:100%">
+    <img src="26.jpg" style="width:100%">
+    <img src="27.jpg" style="width:100%; height: 300px;" >
+  </div>  
+  <div class="column">
+    <img src="28.png" style="width:100%">
+    <img src="29.png" style="width:100%">
+    <img src="33.jpeg" style="width:100%;  height:475px;">
+  </div>
+  <div class="column">
+    <img src="31.jpg" style="width:100%">
+    <img src="30.jpg" style="width:100%">
+    <img src="32.jpg" style="width:100%">
+  </div>
+</div>
+</body>
+</html>

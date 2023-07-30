@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>website</title>
+    <script type="text/javascript" src="javascript.js"></script>
+</head>
+<body style="background-image:url('12.jpg'); background-repeat:no-repeat; background-size: cover;"></body>
+    <form action="" method="get" onsubmit="return registerUser()">
+        <h2>Application Form</h2>
+        <table>
+            <tr>
+                <td><label for="fname">First name:</label></td>
+                <td><input type="text" id="fname" placeholder="firstname"autocomplete="off" required name="fname" ></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last name:</label></td>
+                <td><input type="text" id="lname" name="lname" autocomplete="off" required placeholder="lastname"></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="text" id="age" name="age" autocomplete="off" required placeholder="age" ></td>
+            </tr>
+            <tr>
+                <td><label for="phno">PhNumber:</label></td>
+                <td><input type="text" id="phno" name="phno"autocomplete="off" required placeholder="mobile number" ></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email id:</label></td>
+                <td><input type="text" id="email" name="email"autocomplete="off" required placeholder="emailid"></td>
+            </tr>
+            <tr>
+                <td><label for="sex">Sex:</label></td>
+                <td>
+                    <input type="radio" name="gender" value="Male" required>Male
+                    <input type="radio" name="gender" value="Female" required>Female
+                </td>
+            </tr>
+            <tr>
+                <td><label for="interests">Interests:</label></td>
+                <td>
+                    <input id="checkbox1" type="checkbox" name="interests" value="HTML">HTML<br>
+                    <input id="checkbox2" type="checkbox" name="interests" value="CSS">CSS<br>
+                    <input id="checkbox3" type="checkbox" name="interests" value="JavaScript">JavaScript<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td>
+                    <select required name="My_Menu">
+                        <option value="India">India</option>
+                        <option value="China">China</option>
+                        <option value="Shrilanka">Shrilanka</option>
+                    </select>
+                </td>
+            </tr>
+            <div id="errorBox">
+        <tr>
+            <td><button type="submit" class="submitbtn" >Submit</button></td>
+            <td><button type="button" class="submitbtn" onclick="return refreshPage() ">Reset</button></td>
+        </div> </tr>
+        
+        </table>
+    </form>
+</body>
+</html>
